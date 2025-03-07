@@ -1,0 +1,11 @@
+v: 0
+app_name: fastcaption-api
+micros:
+  - name: fastcaption-api
+    src: .
+    engine: python3.9
+    primary: true
+    run: uvicorn app.main:app
+    dev: uvicorn app.main:app --reload
+    public_routes:
+      - "/*" 
